@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- html>head+body -->
+<html>
+<!-- +는 인접한놈 하나만 ~는 다음에오는는전체 -->
+
+<head>
+    <style>
+        p {
+            color: blue;
+        }
+
+        /* 인접한 형제 셀렉터 */
+        h1+p {
+            background-color: gold;
+        }
+
+        /* 그냥 형제 셀렉터 */
+        h1~p {
+            border: 5px solid pink;
+            padding: 50px;
+        }
+
+        div>p {
+            border: dotted 5px yellow;
+            padding: 20px;
+        }
+
+        div~p {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem.</p>
+    <!-- h1>lorem1^p*5>lorem3 -->
+    <h1>Lorem.</h1>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Dolor, cupiditate reprehenderit.</p>
+    <p>Eveniet, sapiente necessitatibus.</p>
+    <p>Dignissimos, fugit atque?</p>
+    <p>Asperiores, autem consequuntur?</p>
+
+    <!-- div>p*2>lorem3 -->
+    <div>
+        <!-- 아래 두 p요소의 border를 dotted 5px yellow -->
+        <p>Lorem, ipsum dolor.</p>
+        <p>Laborum, aliquid nemo.</p>
+    </div>
+    <!-- 아래 두 p 요소의 배경색을green -->
+    <!-- p*2>lorem3 -->
+    <p>Lorem, ipsum dolor.</p>
+    <p>Molestias, deleniti voluptate.</p>
+</body>
+
+</html>
