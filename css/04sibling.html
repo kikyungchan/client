@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- html>head+body -->
 <html>
-<!-- +는 인접한놈 하나만 ~는 다음에오는는전체 -->
 
 <head>
     <style>
@@ -9,22 +8,24 @@
             color: blue;
         }
 
-        /* 인접한 형제 셀렉터 */
+        /* h1의 다음p 하나만 해당됨됨 */
         h1+p {
             background-color: gold;
         }
 
-        /* 그냥 형제 셀렉터 */
+        /* h1이후에 오는 모든p */
         h1~p {
             border: 5px solid pink;
             padding: 50px;
         }
 
+        /* div에 속해있는p */
         div>p {
             border: dotted 5px yellow;
             padding: 20px;
         }
 
+        /* div이후의 모든 p */
         div~p {
             background-color: green;
         }

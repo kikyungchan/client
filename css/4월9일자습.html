@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul>li {
+            color: red;
+        }
+
+        ol>li {
+            color: blue;
+        }
+
+        h1 {
+            background-color: blue;
+            color: white;
+        }
+
+        h2 {
+            border: solid 5px pink;
+            color: purple;
+        }
+
+        a>img {
+            border: solid 15px pink;
+        }
+
+        .a {
+            border: solid 15px khaki
+        }
+
+        h3+p {
+            border: solid 30px red;
+        }
+
+        h4~p {
+            border: solid 15px green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul>li*3>lorem1 -->
+    <ul>
+        <li>Lorem.</li>
+        <li>Mollitia.</li>
+        <li>Ex.</li>
+    </ul>
+    <!-- ol>li*3>lorem1 -->
+    <ol>
+        <li>Lorem.</li>
+        <li>Dignissimos.</li>
+        <li>Laboriosam.</li>
+    </ol>
+
+    <!-- h1*3>lorem2^h2>lorem2 -->
+    <h1>Lorem, ipsum.</h1>
+    <h1>Laborum, nisi.</h1>
+    <h1>Quibusdam, animi.</h1>
+    <h2>Lorem, ipsum.</h2>
+    <h2>Lorem, ipsum.</h2>
+
+    <img class="a" src="../html/강아지.jpg" alt="">
+    <a href=""><img src="../html/강아지.jpg" alt="">
+        <img src="../html/강아지.jpg" alt="">
+    </a>
+
+
+    <!-- h1>lorem1^p>lorem+h2>lorem1^p>lorem -->
+    <h3>Lorem.</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio in amet vero doloremque repellat,
+        architecto dolorem perferendis tenetur corrupti, labore aspernatur temporibus pariatur ea ipsum est nisi iusto
+        officia.
+    <h4>Lorem.</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis harum quos consectetur, inventore iure magni
+        voluptatem nulla blanditiis consequatur error id atque ab nesciunt culpa hic et nostrum totam voluptas?</p>
+    </p>
+
+
+    
+</body>
+
+</html>
