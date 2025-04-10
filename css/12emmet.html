@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- 컨트롤 스페이스 누르면 힌트나옴 -->
+<html>
+
+<head></head>
+
+<body>
+    <!-- element selector -->
+    <h1></h1>
+    <p></p>
+    <!-- 여러개는 *숫자 -->
+    <p></p>
+    <p></p>
+    <p></p>
+    <h3></h3>
+    <h3></h3>
+    <h3></h3>
+    <h3></h3>
+    <!-- 형제 selector +  -->
+    <h3></h3>
+    <p></p>
+    <!-- 자식 selector> -->
+    <!-- h3>img -->
+    <h3><img src="" alt=""></h3>
+    <!-- ul>li*3 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- h3>a+img -->
+    <h3>
+        <a href=""></a>
+        <img src="" alt="">
+    </h3>
+    <!-- h3>a>img -->
+    <h3>
+        <a href="">
+            <img src="" alt="">
+        </a>
+    </h3>
+    <!-- class selector -->
+    <!-- h3.header -->
+    <h3 class="header"></h3>
+    <!-- p.note*3 -->
+    <p class="note"></p>
+    <p class="note"></p>
+    <p class="note"></p>
+
+    <!-- id selector # -->
+    <!-- h3#header1 -->
+    <h3 id="header1"></h3>
+    <!-- p#note10 -->
+    <p id="note10"></p>
+    <!-- p#bite11*3 -->
+    <!-- 같은 아이디를 주면 안댐 -->
+    <p id="bite11"></p>
+    <p id="bite11"></p>
+    <p id="bite11"></p>
+
+    <!-- 번호 증가 -->
+    <!-- p#note$*3 -->
+    <p id="note1"></p>
+    <p id="note2"></p>
+    <p id="note3"></p>
+
+    <!-- div -->
+    <h3 class="header"></h3>
+    <!-- div.header -->
+    <div class="header"></div>
+    <!-- .header -->
+    <div class="header"></div>
+
+
+    <!-- div#spe1.note.error -->
+    <div id="spe1" class="note error"></div>
+    <!-- #spe2.note.error div 생략 가능-->
+    <div id="spe2" class="note error"></div>
+
+    <!-- table>thead+tbody -->
+    <table>
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+    <!-- 한 부모 위로 ^ 캐럿 삿갓 -->
+    <!-- table>thead>tr^tbody -->
+    <table>
+        <thead>
+            <tr></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- table>thead>tr>td*3^^tbody -->
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- table>thead>tr>th*3>lorem1^^^tbody -->
+    <table>
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Eos!</th>
+                <th>Corporis.</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <!-- table>thead>tr>th*3>lorem1^^^tbody>tr*4>td*3>lorem1 -->
+    <table>
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Tenetur?</th>
+                <th>Incidunt?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Possimus.</td>
+                <td>Sit.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Vitae!</td>
+                <td>Reiciendis.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Dignissimos.</td>
+                <td>Doloremque.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Voluptates!</td>
+                <td>Corporis?</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- table#table1.striped>thead>tr>th.table-header*4>lorem1^^^tbody>tr*3>td.table-cell*4>lorem1 -->
+    <table id="table1" class="striped">
+        <thead>
+            <tr>
+                <th class="table-header">Lorem.</th>
+                <th class="table-header">Nihil!</th>
+                <th class="table-header">Vitae.</th>
+                <th class="table-header">Nesciunt.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-cell">Lorem.</td>
+                <td class="table-cell">Voluptatum?</td>
+                <td class="table-cell">Magnam!</td>
+                <td class="table-cell">Omnis?</td>
+            </tr>
+            <tr>
+                <td class="table-cell">Lorem.</td>
+                <td class="table-cell">Eius?</td>
+                <td class="table-cell">Saepe.</td>
+                <td class="table-cell">Impedit?</td>
+            </tr>
+            <tr>
+                <td class="table-cell">Lorem.</td>
+                <td class="table-cell">Quia.</td>
+                <td class="table-cell">Eos.</td>
+                <td class="table-cell">Amet.</td>
+            </tr>
+        </tbody>
+    </table>
+
+<!-- nav#head.note.error>ul.header1>li.item$*5^^ol.header2>li.item$*5 -->
+<nav id="head" class="note error">
+    <ul class="header1">
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+</nav>
+<ol class="header2">
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+    <li class="item5"></li>
+</ol>
+ 
+
+
+</body>
+
+</html>

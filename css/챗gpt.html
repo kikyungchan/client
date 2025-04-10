@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>모던 포털</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Pretendard', sans-serif;
+      background-color: #1e1e2f;
+      color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #2a2a40;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      text-align: center;
+      color: #61dafb;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      background-color: #343454;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .section h3 {
+      color: #ffd369;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      width: 200px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #444;
+      color: #fff;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #61dafb;
+      color: #1e1e2f;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #21a1f1;
+    }
+
+    #time {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .news ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .news li {
+      padding: 10px 0;
+      border-bottom: 1px solid #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 모던 포털</h1>
+
+    <div class="section login-box">
+      <h3>🔐 로그인</h3>
+      <input type="text" placeholder="아이디" />
+      <input type="password" placeholder="비밀번호" />
+      <button>로그인</button>
+    </div>
+
+    <div class="section clock">
+      <h3>🕒 현재 시간</h3>
+      <p id="time">00:00:00</p>
+    </div>
+
+    <div class="section weather">
+      <h3>🌤️ 날씨 요약</h3>
+      <p>서울 기준 맑음, 18℃</p>
+    </div>
+
+    <div class="section news">
+      <h3>📰 뉴스 브리핑</h3>
+      <ul>
+        <li>🔥 ChatGPT와 함께 웹페이지 만들기!</li>
+        <li>📦 1일 1코딩으로 성장하는 비결</li>
+        <li>💻 최신 웹 기술, 얼마나 알고 있나요?</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      document.getElementById("time").textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>

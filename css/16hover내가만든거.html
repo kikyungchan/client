@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            height: 200px;
+
+        }
+
+        .a {
+            font-weight: 700;
+        }
+
+        tr,
+        td {
+            text-align: center;
+        }
+
+        thead:hover {
+            background-color: gray;
+        }
+
+        #header1 {
+            background-color: gainsboro;
+        }
+
+        #header3 {
+            background-color: gainsboro;
+        }
+
+        #header1:hover,
+        #header2:hover,
+        #header3:hover {
+            background-color: gray;
+        }
+
+        th {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table>thead>tr>th*4>lorem1^^^tbody>tr*3>td*4>lorem1 -->
+    <table>
+        <thead>
+            <tr>
+                <th class="a">#</th>
+                <th>Lorem.</th>
+                <th>A!</th>
+                <th>Non.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="header1">
+                <td class="a">1</td>
+                <td>Lorem.</td>
+                <td>A.</td>
+                <td>Quis!</td>
+            </tr>
+            <tr id="header2">
+                <td class="a">2</td>
+                <td>Lorem.</td>
+                <td>Reiciendis!</td>
+                <td>Incidunt!</td>
+            </tr>
+            <tr id="header3">
+                <td class="a">3</td>
+                <td>Lorem.</td>
+                <td>Repellat.</td>
+                <td>Officia?</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

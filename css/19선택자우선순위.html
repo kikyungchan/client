@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+
+<head>
+    <style>
+        /* 엘레멘트(h1)보다 .(클래스)가 우선.(클래스)보다#(아이디)가우선 */
+        h1 {
+            background-color: skyblue;
+        }
+
+        .head {
+            background-color: beige;
+        }
+
+        .head.note {
+            background-color: yellow;
+        }
+
+        #header1 {
+            background-color: blue;
+        }
+
+        .head.note:hover {
+            background-color: orange;
+        }
+
+        #header1.head {
+            background-color: gold;
+        }
+
+        /* 같은점수면 아래에 있는 것 */
+        .head {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- h1*10>lorem1 -->
+    <h1 class="head">Lorem.</h1>
+    <h1 class="head note">Dolor.</h1>
+    <h1 id="header1" class="head note">Minus!</h1>
+    <h1>Dolores.</h1>
+    <h1>Distinctio!</h1>
+    <h1>Accusantium.</h1>
+    <h1>Quae.</h1>
+    <h1>Dolorum.</h1>
+    <h1>Eos!</h1>
+    <h1>Praesentium.</h1>
+</body>
+
+</html>

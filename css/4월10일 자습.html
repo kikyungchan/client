@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+
+        #head1 {
+            background-color: aqua;
+            top: 0;
+            left: 0;
+            transform: rotate(20deg);
+        }
+
+        #head2 {
+            background-color: gold;
+            right: 0;
+            top: 0;
+            transform: rotate(40deg);
+        }
+
+        #head3 {
+            background-color: bisque;
+            bottom: 0;
+            right: 0;
+            transform: rotate(60deg);
+        }
+
+        #head4 {
+            background-color: blueviolet;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        #head5 {
+            background-color: brown;
+            right: 100px;
+            top: 300px;
+        }
+
+        #head6 {
+            background-color: black;
+            bottom: 150px;
+            left: 50px;
+        }
+
+        #head7 {
+            background-color: skyblue;
+            top: 200px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        #head8 {
+            background-color: chocolate;
+            left: 100px;
+            bottom: 100px;
+        }
+
+        #head9 {
+            background-color: gray;
+            right: 150px;
+            transition: all 0.1s;
+        }
+
+        #head9:hover {
+            background-color: orange;
+        }
+
+        #head9:active {
+            background-color: greenyellow;
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div#head$*9{$} -->
+    <div class="box" id="head1">1</div>
+    <div class="box" id="head2">2</div>
+    <div class="box" id="head3">3</div>
+    <div class="box" id="head4">4</div>
+    <div class="box" id="head5">5</div>
+    <div class="box" id="head6">6</div>
+    <div class="box" id="head7">7</div>
+    <div class="box" id="head8">8</div>
+    <div class="box" id="head9">9</div>
+</body>
+
+</html>
