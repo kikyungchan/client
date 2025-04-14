@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        .mainclass {
+            position: relative;
+        }
+
+        .dog-hover,
+        .sud-hover {
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 250px;
+            z-index: 10;
+            /* 추가된 부분 */
+        }
+
+        .mainclass:hover>.dog-hover,
+        .mainclass:hover>.sud-hover {
+            display: block;
+        }
+
+        .dog-hover:hover,
+        .sud-hover:hover {
+            background-color: white
+        }
+
+        .dog-hover-item,
+        .sud-hover-item {
+            background-color: rgba(128, 128, 128, 0.315);
+            width: 180px;
+            height: 40px;
+        }
+
+        .dog-hover-item:hover,
+        .sud-hover-item:hover {
+            background-color: rgba(128, 128, 128, 0.507);
+
+        }
+
+        .img-box img {
+            width: 250px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .mainclass>.dog-img+.dog-hover>.dog-hover-item*3{$} -->
+    <div class="mainclass">
+        <div class="img-box">
+            <div class="dog-img">
+            </div>
+            <img class="dog" src="../html/강아지.jpg" alt="">
+        </div>
+        <div class="dog-hover">
+            <div class="dog-hover-item">이름:포메라니안</div>
+            <div class="dog-hover-item">종류:포메라니안</div>
+            <div class="dog-hover-item">특징:포메라니안안</div>
+            <div class="dog-hover-item">더 많은 정보보기...</div>
+        </div>
+    </div>
+
+    <div class="mainclass">
+        <div class="img-box">
+            <div class="sud-img">
+            </div>
+            <img class="sud" src="../html/수달.jpeg" alt="">
+        </div>
+        <div class="sud-hover">
+            <div class="sud-hover-item">이름:수달</div>
+            <div class="sud-hover-item">종류:수달</div>
+            <div class="sud-hover-item">특징:수달</div>
+            <div class="sud-hover-item">더 많은 정보보기...</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
