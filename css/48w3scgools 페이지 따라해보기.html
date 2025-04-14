@@ -5,99 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .nemo-button {
-            padding: 17px;
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+            padding: 5px;
         }
 
-        .nemo-button:hover {
+        .top-menu {
+            padding: 17px;
+
+        }
+
+        .top-menu-bumo {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            padding: 17px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        .top-menu:hover {
             background-color: green;
             color: white;
         }
 
-        .logo {
-            font-weight: 900;
-            font-size: 40px;
-            display: flex;
-            align-items: center;
-        }
-
-        .cart-button,
-        .circle-button {
+        .cart-menu {
             padding: 10px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-        }
-
-        .cart-button {
             margin-left: auto;
         }
 
-        .cart-button:hover {
+        .cart-menu:hover {
             background-color: gainsboro;
         }
 
-        .circle-button {
+        .circle-menu:hover {
+            background-color: rgba(0, 128, 0, 0.377);
+        }
+
+        .circle-menu {
             background-color: green;
-            color: white;
+            border-radius: 10px;
+            padding: 10px;
         }
 
-        .circle-button:hover {
-            background-color: rgb(1, 78, 1);
-        }
-
-        .menu-container {
+        .second-menu-bumo {
             display: flex;
+            align-items: center;
+            width: 100%;
+
         }
 
-        .second-top-bar {
-            display: flex;
-            background-color: black;
-        }
-
-        .second-menu-item {
-            background-color: black;
+        .second-menu {
+            background-color: rgba(0, 0, 0, 0.534);
             color: white;
             padding: 16px;
+            width: 100%;
+            align-items: center;
+            text-align: center;
         }
 
-        .second-menu-item:hover {
-            background-color: green;
+        .second-menu:hover {
+            background-color: black;
         }
 
-        .main-content-container {
+        .HOME {
+            color: white;
+            background-color: orange;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .HOME-bumo {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main {
             display: flex;
             height: 100vh;
+            margin-top: 157px;
         }
 
-        .side-menu {
-            width: 200px;
-            background-color: #ddd;
-
-        }
-
-        .ad-container {
+        .left-menu {
             width: 170px;
-            background-color: greenyellow;
+            padding: 10px;
+            background-color: rgba(135, 207, 235, 0.562);
+
         }
 
-        .main-content {
+        .ad {
+            width: 120px;
+            background-color: gold;
+        }
+
+        .middle {
             flex: 1;
-            margin: 24px;
-        }
-
-        .side-menu-header {
-            font-size: 20px;
-            padding-left: 16px;
-        }
-
-        .side-menu-item {
-            padding-left: 26px;
-        }
-
-        .side-menu-item:hover {
-            background-color: #999;
+            padding: 15px;
         }
 
         .top-banner {
@@ -105,172 +114,142 @@
             background-color: skyblue;
         }
 
-        .navi-button {
-            color: white;
-            background-color: goldenrod;
-            padding: 16px 20px;
-            border-radius: 5px;
+        .패딩 {
+            padding-left: 25px;
         }
 
-        .navi-button-container {
-            display: flex;
-            justify-content: space-between;
+        .right {
+            position: relative;
+            left: 20px;
         }
 
-        .jumbotron {
-            background-color: #d9eee1;
-            padding: 24px;
-            margin-top: 24px;
+        .left-padding {
+            padding-left: 35px;
+        }
+
+        .fixed-top {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            padding: 0px 24px 0px 8px;
+            box-sizing: border-box;
+            background-color: white;
         }
     </style>
 </head>
 
 <body>
-    
-    <div class="menu-container">
-        <div class="logo">
-            <span>
-                w
-            </span>
-        </div>
-        <div class="nemo-button">
-            Tutorials
-             <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Exercises
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Certificates
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Services
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="cart-button">
-            <span>
-                <span style="color: blue;">    
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </span>
-                Get certified
-            </span>
-        </div>
-        <div class="circle-button">
-            <span>
-                Sign up
-            </span>
-        </div>
-        <div class="circle-button">
-            <span>
+    <div class="fixed-top">
+
+        <div class="top-menu-bumo">
+            <div class="logo">
+                W
+            </div>
+            <div class="top-menu">
+                Tutorials<i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu">
+                Exercises<i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu">
+                Services<i class="fa-solid fa-caret-down"></i></div>
+            <div class="cart-menu"><span style="color: blueviolet;"><i class="fa-solid fa-cart-shopping"></i></span>Get
+                Certified</div>
+            <div class="circle-menu right">
+                Sign Up
+            </div>
+            <div class="circle-menu left-padding">
                 Log in
-            </span>
+            </div>
+        </div>
+        <div class="second-menu-bumo">
+            <div class="second-menu">
+                HTML</div>
+            <div class="second-menu">
+                cSS</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+
         </div>
     </div>
-    <!-- 두번째 상단바 -->
-    <!-- div.second-top-bar>.second-menu-item*8>lorem1 -->
-    <div class="second-top-bar">
-        <div class="second-menu-item">Lorem.</div>
-        <div class="second-menu-item">Itaque!</div>
-        <div class="second-menu-item">Quae.</div>
-        <div class="second-menu-item">Blanditiis.</div>
-        <div class="second-menu-item">Voluptate.</div>
-        <div class="second-menu-item">Libero!</div>
-        <div class="second-menu-item">Totam?</div>
-        <div class="second-menu-item">Soluta.</div>
-    </div>
+    <div class="main">
 
-    <!-- .main-content-container>.side-menu+.main-conten+.ad-container -->
-
-
-    <div class="main-content-container">
-        <div class="side-menu">
-            <h1 class="side-menu-header">
-                HTML Tutorial
-
-            </h1>
-            <!-- .side-menu-item*30>lorem1 -->
-            <div class="side-menu-item">Lorem.</div>
-            <div class="side-menu-item">Ratione.</div>
-            <div class="side-menu-item">Id!</div>
-            <div class="side-menu-item">Repellat.</div>
-            <div class="side-menu-item">Accusamus.</div>
-            <div class="side-menu-item">Atque.</div>
-            <div class="side-menu-item">Veritatis?</div>
-            <div class="side-menu-item">Magni!</div>
-            <div class="side-menu-item">Tempora!</div>
-            <div class="side-menu-item">Iure.</div>
-            <div class="side-menu-item">Voluptas?</div>
-            <div class="side-menu-item">Rem.</div>
-            <div class="side-menu-item">Quisquam!</div>
-            <div class="side-menu-item">Ullam!</div>
-            <div class="side-menu-item">Quam?</div>
-            <div class="side-menu-item">Accusantium!</div>
-            <div class="side-menu-item">Accusamus?</div>
-            <div class="side-menu-item">Natus.</div>
-            <div class="side-menu-item">Corrupti?</div>
-            <div class="side-menu-item">Nihil.</div>
-            <div class="side-menu-item">Commodi.</div>
-            <div class="side-menu-item">Ducimus!</div>
-            <div class="side-menu-item">Ut.</div>
-            <div class="side-menu-item">Pariatur.</div>
-            <div class="side-menu-item">Quasi!</div>
-            <div class="side-menu-item">Earum.</div>
-            <div class="side-menu-item">Culpa.</div>
-            <div class="side-menu-item">Nesciunt!</div>
-            <div class="side-menu-item">Nobis.</div>
-            <div class="side-menu-item">Suscipit!</div>
+        <div class="left-menu">
+            <h1 style="font-size: 24px;">HTML Tutorial</h1>
+            <div class="패딩">
+                <p>Lorem, ipsum.</p>
+                <p>Voluptatum, itaque!</p>
+                <p>Repellat, quisquam!</p>
+                <p>Laudantium, optio.</p>
+                <p>Commodi, ad.</p>
+                <p>Illo, exercitationem?</p>
+                <p>Labore, sapiente!</p>
+                <p>Voluptate, quod.</p>
+                <p>Aliquam, voluptatem.</p>
+                <p>Inventore, dolore!</p>
+                <p>Quibusdam, minima!</p>
+                <p>In, error.</p>
+                <p>Perspiciatis, at.</p>
+                <p>Rerum, maxime.</p>
+                <p>Ullam, inventore!</p>
+                <p>Lorem, ipsum.</p>
+            </div>
         </div>
 
-        <div class="main-content">
-            <!-- 상단배너 -->
+        <div class="middle">
             <div class="top-banner">
-
             </div>
-            <!-- 제목 -->
             <h1>HTML Tutorial</h1>
-            <!-- 버튼2개 -->
-            <div class="navi-button-container">
-                <div class="navi-button">Home</div>
-                <div class="navi-button">Next</div>
-            </div>
-
-            <!-- 점보트론 -->
-            <!-- .jumbotron>h2>lorem2^p*3>lorem8 -->
-            <div class="jumbotron">
-                <h2>Lorem, ipsum.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <p>Commodi dicta, repellendus debitis odio enim incidunt nesciunt.</p>
-                <p>Soluta culpa sunt nisi error dolorum, labore aliquid.</p>
+            <div class="HOME-bumo">
+                <div class="HOME">
+                    Home</div>
+                <div class="HOME">
+                    Menu</div>
             </div>
             <hr>
-            <!-- content -->
-            <!-- (h3>lorem2^p>lorem)*5 -->
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae iure fuga ea voluptatum in, animi
-                ducimus. Delectus quaerat distinctio perferendis commodi. Ratione voluptatibus cupiditate quas, deleniti
-                explicabo praesentium minima modi?</p>
-            <h3>Nostrum, sed?</h3>
-            <p>Tenetur illo, rerum atque at aspernatur quae minus optio doloribus repellendus impedit reiciendis dolor
-                eligendi blanditiis deserunt! Tempora impedit esse aut dolor, sed, natus sapiente quo iste officia
-                voluptatem ipsam?</p>
-            <h3>Illum, aut.</h3>
-            <p>Culpa earum laboriosam, praesentium ab nemo eveniet nam eligendi dicta numquam tenetur. Reiciendis
-                mollitia magnam praesentium nihil nisi deserunt, sequi, consectetur enim voluptatum sit dignissimos!
-                Repellendus quo repudiandae obcaecati voluptas.</p>
-            <h3>Similique, quos.</h3>
-            <p>Nostrum neque in dolores libero provident quia, doloribus voluptatibus architecto, ut facere veniam a
-                mollitia illo consequatur eveniet ea distinctio! Magnam alias deserunt aut optio quidem ut blanditiis
-                nostrum aliquam!</p>
-            <h3>Ducimus, ipsam.</h3>
-            <p>Similique placeat exercitationem adipisci ipsam impedit, optio modi quisquam aspernatur ex at dolore,
-                consectetur nemo omnis debitis cumque maxime tenetur laboriosam, rerum voluptatum tempore eius
-                distinctio facere. Laborum, delectus eius?</p>
+            <div style="background-color: rgba(135, 207, 235, 0.486); height: 200px;">
+                <h1>Lorem.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus rerum velit magnam distinctio
+                    quas
+                    iusto mollitia beatae eum cupiditate! Ullam a suscipit beatae. Totam, saepe quo. Similique
+                    dolore
+                    obcaecati minima.</p>
+            </div>
+            <h1>Lorem.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit fugit cum? A
+                nostrum iure non, doloribus rem praesentium aperiam ad ducimus amet excepturi earum vitae vero
+                blanditiis nihil laboriosam.</p>
+            <p>Inventore vero placeat minus at voluptatibus! Alias hic placeat temporibus velit, ex voluptatum
+                dolore
+                qui est, libero, eos odit natus dolor enim voluptas aspernatur sint? Temporibus vero iure doloremque
+                veniam!</p>
+            <p>Inventore vero placeat minus at voluptatibus! Alias hic placeat temporibus velit, ex voluptatum
+                dolore
+                qui est, libero, eos odit natus dolor enim voluptas aspernatur sint? Temporibus vero iure doloremque
+                veniam!</p>
+            <p>Inventore vero placeat minus at voluptatibus! Alias hic placeat temporibus velit, ex voluptatum
+                dolore
+                qui est, libero, eos odit natus dolor enim voluptas aspernatur sint? Temporibus vero iure doloremque
+                veniam!</p>
         </div>
-        <div class="ad-container"></div>
+        <div class="ad">
+            3</div>
     </div>
-
 </body>
 
 </html>

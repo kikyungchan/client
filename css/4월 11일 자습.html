@@ -17,6 +17,7 @@
 
         .top-menu {
             padding: 17px;
+
         }
 
         .top-menu-bumo {
@@ -24,6 +25,9 @@
             align-items: center;
             justify-items: center;
             padding: 17px;
+            width: 100%;
+            box-sizing: border-box;
+
         }
 
         .top-menu:hover {
@@ -53,12 +57,17 @@
         .second-menu-bumo {
             display: flex;
             align-items: center;
+            width: 100%;
+
         }
 
         .second-menu {
             background-color: rgba(0, 0, 0, 0.534);
             color: white;
             padding: 16px;
+            width: 100%;
+            align-items: center;
+            text-align: center;
         }
 
         .second-menu:hover {
@@ -80,12 +89,14 @@
         .main {
             display: flex;
             height: 100vh;
+            margin-top: 157px;
         }
 
         .left-menu {
             width: 170px;
             padding: 10px;
             background-color: rgba(135, 207, 235, 0.562);
+
         }
 
         .ad {
@@ -106,41 +117,72 @@
         .패딩 {
             padding-left: 25px;
         }
+
+        .right {
+            position: relative;
+            left: 20px;
+        }
+
+        .left-padding {
+            padding-left: 35px;
+        }
+
+        .top-gojung {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
-    <div class="top-menu-bumo">
-        <div class="logo">
-            W
+    <div class="top-gojung">
+
+        <div class="top-menu-bumo">
+            <div class="logo">
+                W
+            </div>
+            <div class="top-menu">
+                Tutorials<i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu">
+                Exercises<i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu">
+                Services<i class="fa-solid fa-caret-down"></i></div>
+            <div class="cart-menu"><span style="color: blueviolet;"><i class="fa-solid fa-cart-shopping"></i></span>Get
+                Certified</div>
+            <div class="circle-menu right">
+                Sign Up
+            </div>
+            <div class="circle-menu left-padding">
+                Log in
+            </div>
         </div>
-        <div class="top-menu">Tutorials<i class="fa-solid fa-caret-down"></i></div>
-        <div class="top-menu">Exercises<i class="fa-solid fa-caret-down"></i></div>
-        <div class="top-menu">Services<i class="fa-solid fa-caret-down"></i></div>
-        <div class="top-menu"></div>
-        <div class="top-menu"></div>
-        <div class="top-menu"></div>
-        <div class="top-menu"></div>
-        <div class="cart-menu"><span style="color: blueviolet;"><i class="fa-solid fa-cart-shopping"></i></span>Get
-            Certified</div>
-        <div class="circle-menu">Sign Up</div>
-        <div class="circle-menu">Log in</div>
-    </div>
-    <div class="second-menu-bumo">
-        <div class="second-menu">HTML</div>
-        <div class="second-menu">cSS</div>
-        <div class="second-menu">Lorem.</div>
-        <div class="second-menu">Lorem.</div>
-        <div class="second-menu">Lorem.</div>
-        <div class="second-menu">Lorem.</div>
-        <div class="second-menu">Lorem.</div>
-        <div class="second-menu">Lorem.</div>
-        <div class="second-menu">Lorem.</div>
-        <div class="second-menu">Lorem.</div>
-        <div class="second-menu">Lorem.</div>
+        <div class="second-menu-bumo">
+            <div class="second-menu">
+                HTML</div>
+            <div class="second-menu">
+                cSS</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
+            <div class="second-menu">
+                Lorem.</div>
 
+        </div>
     </div>
-
     <div class="main">
 
         <div class="left-menu">
@@ -162,14 +204,6 @@
                 <p>Rerum, maxime.</p>
                 <p>Ullam, inventore!</p>
                 <p>Lorem, ipsum.</p>
-                <p>Voluptatum, itaque!</p>
-                <p>Repellat, quisquam!</p>
-                <p>Laudantium, optio.</p>
-                <p>Commodi, ad.</p>
-                <p>Illo, exercitationem?</p>
-                <p>Labore, sapiente!</p>
-                <p>Voluptate, quod.</p>
-                <p>Aliquam, voluptatem.</p>
             </div>
         </div>
 
@@ -178,25 +212,31 @@
             </div>
             <h1>HTML Tutorial</h1>
             <div class="HOME-bumo">
-                <div class="HOME">Home</div>
-                <div class="HOME">Menu</div>
+                <div class="HOME">
+                    Home</div>
+                <div class="HOME">
+                    Menu</div>
             </div>
             <hr>
             <div style="background-color: rgba(135, 207, 235, 0.486); height: 200px;">
                 <h1>Lorem.</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus rerum velit magnam distinctio quas
-                    iusto mollitia beatae eum cupiditate! Ullam a suscipit beatae. Totam, saepe quo. Similique dolore
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus rerum velit magnam distinctio
+                    quas
+                    iusto mollitia beatae eum cupiditate! Ullam a suscipit beatae. Totam, saepe quo. Similique
+                    dolore
                     obcaecati minima.</p>
             </div>
             <h1>Lorem.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit fugit cum? A
                 nostrum iure non, doloribus rem praesentium aperiam ad ducimus amet excepturi earum vitae vero
                 blanditiis nihil laboriosam.</p>
-            <p>Inventore vero placeat minus at voluptatibus! Alias hic placeat temporibus velit, ex voluptatum dolore
+            <p>Inventore vero placeat minus at voluptatibus! Alias hic placeat temporibus velit, ex voluptatum
+                dolore
                 qui est, libero, eos odit natus dolor enim voluptas aspernatur sint? Temporibus vero iure doloremque
                 veniam!</p>
         </div>
-        <div class="ad">3</div>
+        <div class="ad">
+            3</div>
     </div>
 </body>
 
