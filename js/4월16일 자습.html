@@ -155,20 +155,21 @@
 
         // oddSum(1, 30)
 
-        function addNumbers(a, b) {
-            if (b === undefined) {
-                console.log(0);
+        function addNumbers(a = 0, b = 0) {
+            // if (b === undefined) {
+            //     console.log(0);
 
-            } else {
+            // } else {
 
-                console.log(a + b);
-            }
-
-
+            console.log(a + b);
         }
+
+
+
         addNumbers(1, 10);// 11
         addNumbers(2, 9);// 11
         addNumbers(4);
+        addNumbers();
 
 
 
