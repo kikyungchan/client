@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        function myCode() {
+            console.log("myCode의 명령문"); // myCode라는 함수를
+            //실행하면 myCode의 명령문 이라는 값을 출력
+
+            return function () {
+                console.log("리턴한 함수");//얘도 그냥 값
+
+            }
+
+        }
+        myCode(); //myCode 실행 myCode의 명령문 출력
+
+        console.log("-------------------");
+
+
+        let a = myCode; //myCode라는 값을 a에게넘김
+
+        console.log("-------------------");
+
+        let b = myCode(); // myCode 실행 근데 이떄 
+        // return에 의해 b는 "리턴한 함수로 치환된상태"
+
+        console.log("-------------------");
+
+        b(); // b=myCode 실행 (치환된 값으로 출력)
+
+        myCode()(); // 2번실행, 근데 첫실행에 치환됐으니 치환값으로 출력
+    </script>
+</body>
+
+</html>
