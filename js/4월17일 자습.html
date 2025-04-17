@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // 객체 호출 출력 연습
+        let a = {
+            name: "james",
+            age: 30,
+            address: "seoul"
+        }
+        console.log(a.name);
+        console.log(a.age);
+        console.log(a.address);
+
+        // color 값을 red 로 바꾸고 출력
+
+        let car = {
+            brand: "kia",
+            color: "blue"
+        };
+        car.color = "red";
+        console.log(car.color);
+
+        //student 객체 만들기 
+        // 이름 / 나이 / study 메소드 호출시 "공부 중입니다" 출력
+        let student = {
+            name: "alice",
+            age: 25,
+            study: () => console.log("공부 중입니다.")
+
+        }
+        // function study() {
+        //     console.log("공부 중입니다");
+        // }
+        student.study();
+
+        //people배열 만들고 객체 2개 넣기
+        let people = ["alice", 25]
+        console.log(people[1]);
+
+
+
+
+        //user 라는 객체 만들기 this사용해서 출력하기.
+        let user = {
+            name: "문자열",
+            age: 123,
+            introduce: function () {
+                console.log("저는" + this.name + "이고, " + this.age + "살입니다.");
+
+            }
+        }
+        user.introduce();
+
+
+
+        //prodect 객체
+        let product = {
+            name: "노트북",
+            price: 1500000,
+            discount: 20,
+            getDiscountedPrice: function () {
+                return this.price - this.price * (20 / 100);
+            }
+        }
+        product.getDiscountedPrice();
+
+
+
+
+    </script>
+</body>
+
+</html>
