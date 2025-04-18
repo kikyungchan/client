@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 정보</title>
+</head>
+
+<body>
+    <!-- 사용자로부터 총 3권의 도서정보(책 제목, 저자, 가격) 을 입력받아
+     객체로 저장하고 모든 도서 정보를 출력하고 가장 비싼 책의 정보를 출력핫요 -->
+    <h1>도서 정보 출력</h1>
+    <script>
+        //입력
+        let books = []; // 도서 정보를 저장하기위한 배열
+
+        for (let i = 0; i < 3; i++) {
+            let book = new Object();
+            book.name = prompt('제목을 입력하세요');
+            book.jerja = prompt('저자을 입력하세요');
+            book.price = Number(prompt('가격을 입력하세요'));
+            books.push(book);
+        }
+
+        //처리
+        // 가장비싼얘를 출력
+        let epbook = books[0]
+
+        for (let i = 1; i < books.length; i++) {
+            if (books[i].price > epbook.price) {
+                epbook = books[i];
+            }
+        }
+
+
+        //출력
+        let result = "<h3>모든 도서 정보</h3>";
+        for (let book of books) {
+            result += `제목 : ${book.name}, 저자 : ${book.jerja}, 가격 : ${book.price} <p>`;
+        }
+        result += `<h3>가장 비싼 책</h3>`;
+        document.write(result);
+        books = JSON.stringify(books);
+        localStorage.setItem("books", books);
+    </script>
+</body>
+
+</html>
