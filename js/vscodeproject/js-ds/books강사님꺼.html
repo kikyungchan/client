@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 관리 프로그램</title>
+</head>
+<body>
+    <h1>도서 관리 프로그램</h1>
+
+    <script>
+        // 입력
+        let books = [];
+
+        for (let i = 0; i < 3; i++) {
+            let book = {};
+
+            book.title = prompt('책 제목을 입력하세요:');
+            book.author = prompt('저자를 입력하세요:');
+            book.price = Number(prompt('가격을 입력하세요:'));
+
+            books.push(book);
+        }
+
+        // 도서 목록 출력
+        console.log('[도서 목록]');
+        for (let b of books) {
+            document.write(`제목: ${b.title}, 저자: ${b.author}, 가격: ${b.price}<br>`);
+        }
+
+        // 가장 비싼 책 찾기
+        let maxBook = books[0];
+        for (let b of books) {
+            if (b.price > maxBook.price) {
+                maxBook = b;
+            }
+        }
+
+        document.write('<p>[가장 비싼 책]</p>');
+        document.write(`제목: ${maxBook.title}, 가격: ${maxBook.price}`);
+    </script>
+</body>
+</html>
