@@ -40,6 +40,7 @@
             result += `제목 : ${book.name}, 저자 : ${book.jerja}, 가격 : ${book.price} <p>`;
         }
         result += `<h3>가장 비싼 책</h3>`;
+        result += `제목 : ${epbook.name}, 저자 : ${epbook.jerja}, 가격 : ${epbook.price} <p>`;
         document.write(result);
         books = JSON.stringify(books);
         localStorage.setItem("books", books);

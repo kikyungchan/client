@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 id="header1">Learning JavaScript</h1>
+    <h1 id="header2">Web Development</h1>
+
+    <p class="important">Important paragraph content.</p>
+    <p class="highlighted">Highlighted paragraph with learning JavaScript</p>
+
+    <div class="highlighted">This is a highlighted div</div>
+    <div class="highlighted">Learning about web development</div>
+
+    <h1 class="red">This is a red heading</h1>
+    <h3 class="red">Another red heading</h3>
+
+    <p>This is a regular paragraph.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        let a = document.querySelector("#header2");
+        console.log(a);
+
+
+        let b = document.querySelectorAll("p.important");
+        console.log(b);
+
+
+        let c = document.querySelectorAll("div.highlighted");
+        for (let i = 0; i < c.length; i++) {
+            let text = c[i].innerText.toLowerCase();
+            if (text.includes("learning")) {
+                console.log(c[i]);
+            }
+        }
+
+
+
+        let d = document.querySelectorAll("h1.red,h3.red");
+        for (let i = 0; i < d.length; i++) {
+            let text = d[i].innerText.toLowerCase();
+            if (text.includes("web")) {
+                console.log(d[i]);
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아래 HTML 구조에서 지시에 따라 JavaScript로 원하는 요소만 골라서 출력하시오.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- 예제1 -->
+    <!-- <h2 id="title1" class="red bold">Hello</h2>
+    <p id="desc1" class="blue italic">World</p>
+    <h2 id="title2" class="red italic">Good</h2>
+    <p id="desc2" class="bold italic">Morning</p>
+    <h2 id="title3" class="blue bold">Bye</h2>
+    <p id="desc3" class="red italic">Night</p> -->
+
+
+    <!-- 예제2 -->
+    <!-- <h2 id="head1" class="red bold">Alpha</h2>
+    <p id="para1" class="blue italic">Beta</p>
+    <div id="box1" class="green bold">Gamma</div>
+    <h2 id="head2" class="blue light">Delta</h2>
+    <p id="para2" class="red light">Epsilon</p>
+    <div id="box2" class="blue bold">Zeta</div>
+    <h2 id="head3" class="green italic">Eta</h2>
+    <p id="para3" class="blue bold">Theta</p>
+    <div id="box3" class="red italic">Iota</div> -->
+
+    <!-- 예제3 -->
+    <!-- <h3 class="red bold">Frontend</h3>
+    <p class="blue italic">React</p>
+    <div class="red italic">Vue</div>
+    <h3 class="green bold">Backend</h3>
+    <p class="blue bold">Node.js</p>
+    <div class="blue bold">Express</div>
+    <h3 class="blue light">Fullstack</h3>
+    <p class="red italic">Svelte</p>
+    <div class="green italic">NestJS</div> -->
+
+    <!-- 예제4 -->
+    <!-- <div id="box1" class="bold">First Box</div>
+    <div id="box2" class="italic red">Second Box</div>
+    <div id="box3" class="bold">Third Box</div>
+
+    <p class="highlight">Paragraph One</p>
+    <p class="highlight red">Paragraph Two</p>
+    <p class="italic">Just Italic</p>
+
+    <div class="bold note">Bold Note Div</div>
+    <div class="italic red">Div with Both</div>
+
+    <h2>Javascript</h2>
+    <h2>React</h2>
+    <h2>CSS</h2>
+    <h2>Html</h2> -->
+
+
+    <!-- 예제5 -->
+    <!-- <h2 id="heading1">JavaScript is great</h2>
+    <p class="highlight">Learning HTML is fun</p>
+    <div class="highlight">CSS makes websites beautiful</div>
+    <h3>Web development is amazing</h3>
+    <p class="highlight">Front-end development with React</p>
+    <h2>Backend technologies</h2>
+    <h2 class="highlight">JavaScript frameworks</h2> -->
+
+
+    <!-- 예제6 -->
+    <!-- <h1 id="title1">Welcome to JavaScript</h1>
+    <p class="content">JavaScript is fun!</p>
+    <h2 class="highlight">Learning React</h2>
+    <p class="content">React is a powerful library.</p>
+    <h2 class="highlight">Exploring Node.js</h2>
+    <p class="content">Node.js is used for backend development.</p>
+    <h1 id="title2">Understanding Frontend</h1>
+    <p class="content">Frontend development involves HTML, CSS, and JavaScript.</p>
+    <h2 class="highlight">Mastering HTML</h2>
+    <p class="content">HTML is the structure of web pages.</p> -->
+
+
+
+    <h1 id="header1">JavaScript Introduction</h1>
+    <p class="content">JavaScript is a programming language.</p>
+    <h2 class="highlight">Learn JavaScript</h2>
+    <p class="content">HTML is the structure of web pages.</p>
+    <p class="highlight">React is a JavaScript library for building user interfaces.</p>
+    <h3 class="highlight">Understanding React</h3>
+    <p>Backend development with Node.js is fun.</p>
+    <p class="content">JavaScript is used for front-end and back-end development.</p>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+
+
+
+        //예제1
+        // let a = document.querySelector("#title2")
+        // console.log(a);
+        // let b = document.querySelectorAll(".italic")
+        // for (let i = 0; i < b.length; i++) {
+        //     console.log(b[i]);
+        // }
+        // let c = document.querySelectorAll("p.italic")
+        // for (let i = 0; i < c.length; i++) {
+        //     console.log(c[i]);
+        // }
+
+
+        //예제2
+        // 1번문제. id="box2"인 요소 출력
+        // let a = document.querySelector("#box2")
+        // console.log(a);
+
+        // // 2번문제. 클래스"bold"를 가진 <p> 태그들만 출력
+        // let b = document.querySelectorAll("p.bold")
+        // for (let i = 0; i < b.length; i++) {
+        //     console.log(b[i]);
+        // }
+
+        // // 3번문제. <div>태그 이면서 "italic" 클래스를 가진 요소만 출력
+        // let c = document.querySelectorAll("div.italic")
+        // for (let i = 0; i < c.length; i++) {
+        //     console.log(c[i]);
+        // }
+
+        // // 4번문제. "blue" 클래스와 "bold"클래스를 둘 다 가진 요소만 출력
+        // let d = document.querySelectorAll(".blue.bold")
+        // for (let i = 0; i < d.length; i++) {
+        //     console.log(d[i]);
+        // }
+
+        // //예제3
+        // let a = document.querySelectorAll("div.bold")
+        // let b = document.querySelectorAll(".ltalic").innerText.includes("e")
+        // let c = document.querySelectorAll("p.blue.red")
+        // let d = document.querySelectorAll("h3.bold").innerText.includes("end")
+
+        //예제4
+        // let a = document.querySelector("#box3")
+        // console.log(a);
+        // let b = document.querySelectorAll("p.highlight")
+        // console.log(b);
+        // let c = document.querySelectorAll("div.bold")
+        // console.log(c);
+        // let d = document.querySelectorAll(".red.italic")
+        // console.log(d);
+        // let f = document.querySelectorAll("h2")
+        // for (let i = 0; i < f.length; i++) {
+        //     let text = f[i].innerText.toLowerCase();
+        //     if (text.includes("e")) {
+        //         console.log(f[i]);
+
+        //     }
+
+
+        // }
+
+
+        //예제5
+        // let a = document.querySelector("#heading1");
+        // console.log(a);
+
+
+        // let b = document.querySelectorAll(".highlight");
+        // for (let i = 0; i < b.length; i++) {
+        //     let text = b[i].innerText.toLowerCase();
+        //     if (text.includes("react")) {
+        //         console.log(b[i]);
+        //     }
+        // };
+
+
+        // let c = document.querySelectorAll("h2");
+        // for (let i = 0; i < c.length; i++) {
+        //     let text = c[i].innerText.toLowerCase();
+        //     if (text.includes("javascript")) {
+        //         console.log(c[i]);
+        //     }
+        // };
+
+
+        // let d = document.querySelectorAll("p");
+        // for (let i = 0; i < d.length; i++) {
+        //     let text = d[i].innerText.toLowerCase();
+        //     if (text.includes("fun")) {
+        //         console.log(d[i]);
+        //     }
+        // };
+
+
+        // let e = document.querySelectorAll("h2");
+        // for (let i = 0; i < e.length; i++) {
+        //     let text = e[i].innerText.toLowerCase();
+        //     if (text.includes("backend")) {
+        //         console.log(e[i]);
+        //     }
+        // }
+
+
+
+        //예제6
+        // let a = document.querySelector("#title1");
+        // console.log(a);
+
+
+        // let b = document.querySelectorAll("p.content");
+        // console.log(b);
+
+        // let c = document.querySelectorAll("h2.highlight");
+        // console.log(c);
+
+        // let d = document.querySelectorAll("h1,h2,p")
+        // for (let i = 0; i < d.length; i++) {
+        //     let text = d[i].innerText.toLowerCase();
+        //     if (text.includes("react")) {
+        //         console.log(d[i]);
+        //     }
+        // }
+
+
+        let a = document.querySelector("#header1");
+        console.log(a);
+
+
+
+        let b = document.querySelectorAll("p.content");
+        console.log(b);
+
+
+        let c = document.querySelectorAll("p.highlight,h2.highlight,h3.highlight");
+        console.log(c);
+
+        let d = document.querySelectorAll("h1,h2,h3,p");
+        for (let i = 0; i < d.length; i++) {
+            let text = d[i].innerText.toLowerCase();
+            if (text.includes("javascript")) {
+                console.log(d[i]);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
