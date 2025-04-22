@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- div#box1>div#box2>h1>lorem1^p>lorem3 -->
+    <div id="box1">
+        <div id="box2">
+            <h1>Lorem.1</h1>
+            <p>Lorem, ipsum dolor.1</p>
+        </div>
+    </div>
+
+    <!-- div#box3>div#box4>h1>lorem1^p>lorem3 -->
+    <div id="box3">
+        <div id="box4">
+            <h1>Lorem2.</h1>
+            <p>Lorem, ipsum dolor.2</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        let a = document.querySelector("h1")
+        console.log(a);
+        let b = document.querySelectorAll("h1") // All이면 배열열
+        console.log(b[1]);
+        let c = document.querySelector("#box2")
+        console.log(c);
+
+
+        //엘레멘트의 부모님을 찾는방법
+        let d = a.parentElement;
+        console.log(d);
+        console.log(d.parentElement);
+        let e = b[1].parentElement;
+        console.log(e);
+        console.log(e.parentElement);
+
+
+        //형제를 찾는방법
+        console.log(a.nextElementSibling); // 다음에 오는 형제
+        let f = a.nextElementSibling;
+        console.log(f.previousElementSibling); // 이전에 오는 형제
+
+        //b[1]의 다음 형제
+        console.log(b[1].nextElementSibling);
+        console.log(b[1].nextElementSibling.previousElementSibling);
+
+
+        //자식 찾는 방법
+        let g = document.querySelector("#box2");
+        let h = g.children; // 배열의 개념으로 접근해야함
+        console.log(h[0]);
+        console.log(h[1]);
+
+        //자식 찾기
+        //box3손자로 있는h1,p 요소 찾아서 출력
+        let i = document.querySelector("#box3")
+        let j = i.children // 칠드런은 배열의 개념으로 접근ㄴ해야함
+        let k = j[0].children
+        console.log(k[0]);
+        console.log(k[1]);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
