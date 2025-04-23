@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,32 +16,22 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        //if,swich : 조건문 분기문
-        let genre = "normal";
-        genre = "horror";
-        if (genre === "normal") {
+        // string template에 template expression을 사용할 수 있다.
+        let a = `hello john`;
+        console.log(a);
+        let b = `hello jane`;
+        console.log(b);
+        let name = "john";
+        let c = `hello ${name}`;
+        console.log(c);
+        let otherName = "jane";
+        let d = `hello${otherName}`;
+        console.log(d);
+        let address = "seoul";
+        let e = `I'm ${name}. live in ${address}`;
 
-            console.log(1);
-        } else if (genre === "horror") {
 
-            console.log(2);
-        }
-        // swich:()값을 각 case 와 비교해서 
-        //              일치하는 곳 부터 break; 까지 실행
-        switch (genre) {
-            case "normal":
-                console.log(3);
-                break;
 
-            case "horror":
-                console.log(4);
-                break;
-        }
-        console.log(5);
-        console.log(6);
-        console.log(7);
-        console.log(8);
-        console.log(9);
 
     </script>
 </body>
