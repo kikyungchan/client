@@ -11,50 +11,61 @@
 
     <script>
         // 객체 리터럴
-        const person = {
-            name: '홍길동',
-            age: 25,
-            isStudent: false
-        };
+        // const person = {
+        //     name: '홍길동',
+        //     age: 25,
+        //     isStudent: false
+        // };
+ member123 = new Object();
+ 
+ member123.userid = "abc123";
+ member123.passwd = "987zxc";
+ member123.email = "abc123@987zxc.co.kr";
+ member123.name = "홍길동";
+
+ console.log(member123["userid"]);
+ 
+ 
+
 
         // Object() 생성자
         // 객체명.키 = 값
-        const member = new Object();
-        member.userid = 'abc123';
-        member.passwd = '987xyz';
-        member.email = 'abc123@987xyz.co.kr';
-        member.name = '홍길동';
+        // const member = new Object();
+        // member.userid = 'abc123';
+        // member.passwd = '987xyz';
+        // member.email = 'abc123@987xyz.co.kr';
+        // member.name = '홍길동';
 
         // 객체 속성 접근 : 점 표기법
         // 객체명.속성명
-        console.log(person.name);
-        console.log(person.age);
-        console.log(person.isStudent);
+        // console.log(person.name);
+        // console.log(person.age);
+        // console.log(person.isStudent);
 
         // 객체 속성 접근 : 대괄호 표기법
         // 객체명['속성명']
-        console.log(member['userid']);
-        console.log(member['passwd']);
-        console.log(member['name']);
-        console.log(member['email']);
+        // console.log(member['userid']);
+        // console.log(member['passwd']);
+        // console.log(member['name']);
+        // console.log(member['email']);
 
         // 객체 반복 처리 - 키를 이용해서 값을 출력
-        for (let key in person) {
-            console.log(key, person[key]);
-        }
+        // for (let key in person) {
+        //     console.log(key, person[key]);
+        // }
 
         // 객체구조분해 : ES6에서 추가
         // { 키1, 키2, ... } = 객체명;
-        const { name, age, isStudent } = person;
-        console.log(name, age, isStudent);
+        // const { name, age, isStudent } = person;
+        // console.log(name, age, isStudent);
 
         // 기타 유용한 메서드
         // Object.keys(객체)
         // Object.values(객체)
         // Object.entries(객체)
-        console.log(Object.keys(member));
-        console.log(Object.values(member));
-        console.log(Object.entries(member));
+        console.log(Object.keys(member123));
+        console.log(Object.values(member123));
+        console.log(Object.entries(member123));
         
     </script>
 </body>
