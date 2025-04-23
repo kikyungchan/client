@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>간단한 리스트 만들기</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <style>
@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <!-- input#input1+button#btn1{+}+hr+ul#list1 -->
     <input type="text" id="input1">
     <button id="btn1">+</button>
@@ -27,57 +26,56 @@
         crossorigin="anonymous"></script>
     <script>
         document.querySelector("#btn1").addEventListener("click", function () {
-            //input요소에 입력된value 
+            //input 요소 입력된 value
             let v = document.querySelector("#input1");
 
-            //를 컨텐츠로 갖는 li을
+            //를 컨텐츠로 갖는 li를 만들어서
             let newLi = document.createElement("li");
-            newLi.append(v.value);//#input1 값
+            newLi.append(v.value);
 
             //ul에 붙이기
-            document.querySelector("#list1").append(newLi);
+            let ui = document.querySelector("#list1")
+            ui.append(newLi);
+
+
+
+            //입력완료시 input초기화
+            v.value = "";
 
             //완료버튼 만들어서
-            let doneB = document.createElement("button");
-            doneB.textContent = "완료"
+            let done = document.createElement("button")
+            done.textContent = "완료"
 
-            //li에 붙이기
-            newLi.append(doneB);
+            //newLi에붙이기
+            newLi.append(done);
 
             //삭제버튼 만들어서
-            let removeB = document.createElement("button");
-            removeB.textContent = "삭제"
+            let remove = document.createElement("button")
+            remove.textContent = "삭제";
 
-            //li에 붙이기
-            newLi.append(removeB);
+            //newLi에 붙이기
+            newLi.append(remove);
 
-
-            //완료버튼 클릭시
-            doneB.addEventListener("click", function () {
-
-                //newLi의 클래스 done 추가/삭제
+            //완료버튼을 누르면
+            done.addEventListener("click", function () {
+                //newLi의 클래스 done
                 newLi.classList.toggle("done")
 
+                //done클래스가 있으면 
                 if (newLi.classList.contains("done")) {
-                    //done클래스가 있으면
-                    //버튼의 text를 취소
-                    doneB.textContent = "취소"
-                    //done클래스가 없으면
-                    //버튼의 text를 완료
+                    //완료버튼의 text를 취소
+                    done.textContent = "취소"
+                    //없으면 "완료"
                 } else {
-                    doneB.textContent = "완료"
+                    done.textContent = "완료"
                 }
             })
-            //삭제버튼 누르면
-            removeB.addEventListener("click", function () {
-                //리스트삭제
+            //삭제버튼을 누르면
+            remove.addEventListener("click", function () {
+                //newLi삭제
                 newLi.remove();
-
             })
-            //input 값 초기화
-            v.value = "";
         })
-
     </script>
 </body>
 
